@@ -1,0 +1,342 @@
+/* >>> Acá tener en cuenta el mobile first: */
+
+/* >>> Recordar que en la style.css hay un reset de margin, padding y border-box a 0 */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Mobile: */
+
+.mainHeader{
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.2);
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.mainHeaderTop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #022B3A;
+}
+
+.logoPrincipal{
+    width: 250px;
+    margin: 20px 0 20px 10px;
+}
+
+.busqueda{
+    width: 35%;
+    min-width: 210px;
+    height: 30px;
+    background-color: white;
+    margin: 0 0 10px 0;
+    display: flex;
+    border-radius: 10px;
+}
+
+.busqueda i{
+  margin: auto;
+  margin-right: 20px;
+}
+
+.busqueda p{
+    margin: auto 20px;
+    font-size: 13px;
+    color:#3b5964 ;
+} 
+.search{
+    width: 95%;
+    height: 25px;
+    border: none;
+    margin-top: 2.5px;
+}
+
+.loginCarrito {
+    display: flex;  
+    color: white;
+    padding: 5px 10px;
+    justify-content:center;
+  
+    
+    
+}
+
+
+
+.loginCarrito i{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+   
+}
+
+
+
+.loginCarrito2 i{
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.mainHeaderMobile{
+    display: block;
+    max-width: 100%;
+    background-color: #022B3A;
+    padding: 10px 0;
+}
+
+.botonMenuMobile{
+    font-size: 22px;
+    background-color: #1F7A8C;
+    color: #022B3A;
+    display: block;
+    max-width: 40px;
+    padding: 6px 0 6px 0;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.73); 
+    box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.73);
+}
+
+.profileUser{
+    width: 80%;
+   margin-right: 20px;
+   
+}
+.profileUser img{
+    width: 50px;
+    border-radius: 50%;
+   
+   
+    
+   
+  }
+
+  .barraProfile{
+      display: none;
+
+  }
+
+  .switchD {
+      color:black;
+      font-size: 40px;
+      cursor: pointer;
+  }
+  .switchN {
+    color:black;
+    font-size: 40px;
+    display:none;
+    cursor: pointer;
+}
+
+
+/*<-- A partir de acá va la parte inferior del header con menu para la version desktop -->*/
+
+.mainHeaderBottom{
+    display: none;
+}
+
+/*<-- A partir de acá va la parte footer -->*/
+
+footer{
+    background-color: #e1e5f2;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: space-around;
+   
+}
+
+.footerLinks{
+    margin: auto 0 auto 0;
+}
+
+.footerLinks ul li {
+    color: #022B3A;
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px 0 ;
+}
+
+.redesSociales{
+    color: #022B3A;
+    text-align: center;
+    font-size: 24px;
+    margin: auto 0 auto 0;
+}
+
+.redesSociales a i{
+    padding: 0 6px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Tablet: */
+@media (min-width: 481px){
+    .searchForm{
+        width: 95%;
+        
+    }
+    .busqueda i{
+       margin-left: 20px;
+        margin-right: 20px;
+      }
+    
+    .search{
+        width: 95%;
+        height: 25px;
+        border: none;
+        margin-top: 2.5px;
+    }
+
+    .profileUser{
+        width: 20%;
+    }
+
+    .profileUser img{
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Compu normal: */
+@media (min-width: 769px){
+    
+    .mainHeaderMobile{
+        display: none;
+    }
+
+    footer{
+        background-color: #e1e5f2;
+        height: 138px;
+        flex-direction: row;
+    }
+
+/*<-- A partir de acá va la parte superior del header con menu para la version desktop -->*/
+.mainHeaderTop{
+    flex-direction: row;
+}
+
+/*<-- A partir de acá va la parte inferior del header con menu para la version desktop -->*/
+.mainHeaderBottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    background-color: #1F7A8C;
+}
+.mainHeaderBottom ul{
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    color: #e1e5f2;
+    display: flex;
+    padding: 5px 0;
+    }
+.mainHeaderBottom li{
+    padding: 4px 15px 4px 15px ;
+    font-weight: 300;
+    transition: 1s;
+}
+
+.mainHeaderBottom li:hover{
+    color: white;
+}
+
+.botonMenuMobile{
+    display: none;
+}
+
+
+
+.searchForm{
+    width: 95%;
+   
+}
+.busqueda i{
+   margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.search{
+    width: 95%;
+    height: 25px;
+    border: none;
+    margin-top: 2.5px;
+}
+
+.profileUser{
+    width: 100px;
+    text-align: center;
+   
+   
+    
+}
+.profileUser img{
+    width: 60%;
+    border-radius: 50%;
+   
+  }
+
+.barraProfile{
+    display: block;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    
+    
+}
+  .barraProfile li a{
+    padding:10px 12px;
+    display:block;
+    background-color: rgba(129, 212, 250, 0.459);
+    color: white;
+    font-size: 17px;
+  
+  }
+
+  .barraProfile li a:hover{
+    background-color:#4343438c;
+   
+  }
+
+  .barraProfile > ul{
+      float: right;
+  }
+li{
+    list-style: none;
+}
+  .barraProfile li ul{
+      display: none;
+    position: absolute;
+    min-width:130px;
+    list-style: none;
+    
+  
+  }
+
+  .barraProfile  li:hover > ul {
+      display: block;
+    
+  } 
+
+
+
+/*<-- A partir de acá va la parte footer para la versión desktop -->*/
+
+.footerLinks{
+    display: inline-block;
+}
+
+.redesSociales{
+    display: inline-block;
+}
+
+
+}
+
