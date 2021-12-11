@@ -340,3 +340,35 @@ li{
 
 }
 
+
+/*<-- CSS PARA REACT -->*/
+.panelConteinerUsers{
+    width: 500px;
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-right: 10px solid green;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+   
+}
+
+.fa-users{
+    display: flex;
+    font-size: 50px;
+    color:#022B3A;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.totalUsers{
+    display: flex;
+    margin-left: 40px;
+    
+   
+}
+
+.conteinerPanelTotal{
+    
+    border: 1px solid red;
+}
