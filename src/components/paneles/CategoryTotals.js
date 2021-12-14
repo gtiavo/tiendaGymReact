@@ -12,12 +12,14 @@ function CategoryTotals() {
 
     return ( 
     <>
-        {category.map(item => 
-        <section className = 'containerCategory'>
+        <p className='TituloCategory' >CATEGORIAS</p>
+        {category.map((item, i) => 
+        <section key={i + item} className = 'containerCategory'>
             <h1>
               {item.name}
             </h1>
-            <h2> {item.productos} </h2>
+            <h2 className='totalCate'> {item.productos} </h2>
+            <i className="fas fa-puzzle-piece"></i>
         </section>
         )}
     </> 

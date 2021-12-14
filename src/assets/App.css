@@ -406,10 +406,30 @@ li{
     border: 1px solid red;
 }
 
+.TituloCategory{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .containerCategory{
     width: 200px;
+    height: 200px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
-    border: 1px solid red;
+    margin-left: 20px;
+    
+}
+.totalCate{
+    margin: auto;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.fa-puzzle-piece{
+    margin-top: 20px;
+    font-size: 50px;
+    color: rgb(235, 90, 90);
 }
