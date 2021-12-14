@@ -1,11 +1,13 @@
-import Users from "./Users";
+import Totales from "./Totales";
+import CategoryTotals from "./CategoryTotals";
+
 
 function PanelTotales() {
     return ( 
         <section className='conteinerPanelTotal'>
-        < Users />
-        < Users />
-        < Users />
+        < Totales />
+        < CategoryTotals />
+       
         </section>
      );
 }
