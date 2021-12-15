@@ -10,6 +10,10 @@ function CategoryTotals() {
         .then(data => setCategory(data.countByCategory))
     }, [])
 
+    useEffect(() => {
+       
+    }, [category])
+
     return ( 
     <>
         <p className='TituloCategory' >CATEGORIAS</p>
