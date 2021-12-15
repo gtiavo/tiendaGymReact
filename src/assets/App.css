@@ -406,6 +406,16 @@ li{
     border: 1px solid red;
 }
 
+.conteinerTotaless{
+    border: 1px solid red;
+    
+}
+.conteinerTotalessCate{
+    width: 300px;
+    
+    border: 1px solid red;
+}
+
 .TituloCategory{
     margin-left: 20px;
     font-size: 20px;
@@ -415,6 +425,7 @@ li{
 .containerCategory{
     width: 200px;
     height: 200px;
+    display: block;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-left: 20px;
@@ -432,4 +443,21 @@ li{
     margin-top: 20px;
     font-size: 50px;
     color: rgb(235, 90, 90);
+}
+
+.conteinerLastUser{
+    margin-left: 20px; 
+}
+
+.cardLastUser{
+    width: 300px;
+    text-align: center;
+    border: 1px solid red;
+}
+.conteinerLastCate{
+    display: flex;
+}
+
+.imgLastUser{
+    width: 200px;
 }

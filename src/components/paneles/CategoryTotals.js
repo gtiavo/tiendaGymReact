@@ -16,6 +16,7 @@ function CategoryTotals() {
 
     return ( 
     <>
+         <article className='conteinerTotalessCate'>
         <p className='TituloCategory' >CATEGORIAS</p>
         {category.map((item, i) => 
         <section key={i + item} className = 'containerCategory'>
@@ -26,6 +27,7 @@ function CategoryTotals() {
             <i className="fas fa-puzzle-piece"></i>
         </section>
         )}
+        </article>
     </> 
     );
 }

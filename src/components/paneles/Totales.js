@@ -20,6 +20,7 @@ function Users() {
        fetch('/api/products')
        .then(response => response.json())
        .then(data => setProducts(data));
+       
        fetch('/api/products')
        .then(response => response.json())
        .then(data => setCategories(data.countByCategory.length));
@@ -46,6 +47,7 @@ function Users() {
 
     return ( 
         <>
+        <article className='conteinerTotaless'>
         <section className = 'panelConteinerUsers'>
         <i className="fas fa-users"></i>
         <h1 className='totalUsers' > Total de Usuarios en DB : {users}</h1>
@@ -58,6 +60,7 @@ function Users() {
         <i className="fas fa-heartbeat"></i>
         <h1 className='totalUsers' > Total de Categorias en DB : {categories}</h1>
         </section>
+        </article>
         </>
      );
 }
