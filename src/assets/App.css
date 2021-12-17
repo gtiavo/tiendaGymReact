@@ -402,18 +402,15 @@ li{
 }
 
 .conteinerPanelTotal{
-    
-    border: 1px solid red;
+    display: flex;
+   
 }
 
-.conteinerTotaless{
-    border: 1px solid red;
-    
-}
+
 .conteinerTotalessCate{
+    
     width: 300px;
     
-    border: 1px solid red;
 }
 
 .TituloCategory{
@@ -425,7 +422,6 @@ li{
 .containerCategory{
     width: 200px;
     height: 200px;
-    display: block;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-left: 20px;
@@ -446,18 +442,56 @@ li{
 }
 
 .conteinerLastUser{
-    margin-left: 20px; 
+    
+    margin-left: 100px; 
 }
 
 .cardLastUser{
     width: 300px;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 .conteinerLastCate{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
 }
 
 .imgLastUser{
     width: 200px;
+}
+
+.conteinerLastProduct{
+
+    margin-left: 100px;
+}
+
+.cardLastProduct{
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   
+}
+
+.imgLastProduct{
+    padding: 10px;
+    width: 370px;
+}
+.tableProducts th{
+border: 1px solid black;
+}
+
+.tableProducts td{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    }
+.conteinerTableProducts{
+  margin-left: 20px;
+  margin-top: 50px;
+    
 }

@@ -1,18 +1,23 @@
 import Totales from "./Totales";
 import CategoryTotals from "./CategoryTotals";
 import LastUser from './LastUser';
+import LastProduct from "./LastProduct";
+import ListProducts from "./ListProducts";
 
 
 function PanelTotales() {
     return ( 
-        
-        <section className='conteinerPanelTotal'>
+        <div>
         < Totales />
-        <section className="conteinerLastCate">
+        <section className="conteinerPanelTotal">
         < CategoryTotals />
+        <section className="conteinerLastCate">
        < LastUser />
+       < LastProduct />
+       < ListProducts />
        </section>
-        </section>
+       </section>
+        </div>
      );
 }
 
