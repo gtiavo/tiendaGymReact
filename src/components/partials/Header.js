@@ -1,4 +1,5 @@
 import Logo from '../../assets/img/tgym_logos-03.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -6,44 +7,44 @@ function Header() {
       <header className="mainHeader">
         {/* <!--A partir de acá va la parte superior del header con logo, buscador y login--> */}
         <div className="mainHeaderTop">
-          <a href="../" id="logo">
+          < Link  to="/" id="logo">
             <img src={Logo} className="logoPrincipal" />
-          </a>
-          <nav className="busqueda">
+          </ Link>
+          {/* <nav className="busqueda">
             <i className="fas fa-search"></i>
             <form action="/search" method="GET" className="searchForm">
               <input type="text" name="search" className="search" />
             </form>
-          </nav>
-          <nav className="apaEnce">
+          </nav> */}
+          {/* <nav className="apaEnce">
             <i className="fas fa-toggle-on switchD"></i>
             <i className="fas fa-toggle-off switchN"></i>
-          </nav>
+          </nav> */}
 
-          <nav className="loginCarrito ">
+          {/* <nav className="loginCarrito ">
             <a href="../login">
               <i className="fas fa-user-circle"> </i>
             </a>
             <a href="../productCart" id="cartItem">
               <i className="fas fa-shopping-cart"> </i>
             </a>
-          </nav>
+          </nav> */}
         </div>
         {/*   <!--A partir de acá va la parte inferior del header con menu para la version desktop --> */}
         <nav className="mainHeaderBottom">
           <ul className="menuInferior">
-            <a href="../construction">
+            <Link to="/products">
               <li>Productos</li>
-            </a>
-            <a href="../construction">
+            </Link>
+            <Link to="/users">
               <li>Usuarios</li>
-            </a>
-            <a href="../construction">
+            </Link>
+            {/* <a href="../construction">
               <li>Categorias</li>
-            </a>
-            <a href="../construction">
+            </a> */}
+            <Link to="/">
               <li>Home</li>
-            </a>
+            </Link>
           </ul>
         </nav>
         {/* <!--Dejo botón para versión mobile: --> */}
