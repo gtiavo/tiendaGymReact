@@ -7,6 +7,7 @@ import ProductsPage from './paneles/ProductsPage';
 import Users from './paneles/Users';
 import UserDetail from './paneles/UserDetail';
 import ProductDetail from './paneles/ProductDetail';
+import NotFound from './paneles/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     < Route path = '/users' element ={< Users/>} />
     < Route path = '/users/:id' element ={< UserDetail/>} />
     < Route path = '/products/:id' element ={< ProductDetail/>} />
+    < Route path ='*' element={< NotFound />} />
     </Routes>
    < Footer />
     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 function Footer() {
     return ( 
         <>
@@ -12,9 +13,9 @@ function Footer() {
     </ul>
   </div>
   <div className="redesSociales">
-    <a href="#"><i className="fab fa-whatsapp"></i></a>
-    <a href="#"><i href="#" className="fab fa-facebook"></i></a>
-    <a href="#"><i href="#" className="fab fa-instagram"></i></a>
+    <Link to="#"><i className="fab fa-whatsapp"></i></Link>
+    <Link to="#"><i href="#" className="fab fa-facebook"></i></Link>
+    <Link to="#"><i href="#" className="fab fa-instagram"></i></Link>
   </div>
 </footer>
         </>

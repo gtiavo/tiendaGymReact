@@ -8,7 +8,7 @@ function Header() {
         {/* <!--A partir de acá va la parte superior del header con logo, buscador y login--> */}
         <div className="mainHeaderTop">
           < Link  to="/" id="logo">
-            <img src={Logo} className="logoPrincipal" />
+            <img src={Logo} alt='No se encontro la imagen' className="logoPrincipal" />
           </ Link>
           {/* <nav className="busqueda">
             <i className="fas fa-search"></i>
@@ -49,9 +49,9 @@ function Header() {
         </nav>
         {/* <!--Dejo botón para versión mobile: --> */}
         <div className="mainHeaderMobile">
-          <a href="#" className="botonMenuMobile">
+          <Link to="#" className="botonMenuMobile">
             <i className="fas fa-dumbbell"></i>
-          </a>
+          </Link>
         </div>
       </header>
 

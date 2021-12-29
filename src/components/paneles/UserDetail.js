@@ -7,17 +7,19 @@ const UserDetail = () => {
     const [img, setImg] = useState([]);
 
     useEffect(() => {
-        fetch(`/api/users/${id}`)
-            .then(response => response.json())
-            .then(data => setUser(data.data))
-        fetch(`/api/users/${id}`)
-            .then(response => response.json())
-            .then(data => setImg(data.data.image) )
-        
+
+        fetchData();
+   
     }, []);
 
+    async function fetchData(){
+        const data = await (await fetch(`/api/users/${id}`)).json()
+        setUser(data.data);
+        setImg(data.data.image);
+      }
+
 const {id} = useParams()
-console.log(id);
+
     return (
         <>
         
@@ -26,7 +28,7 @@ console.log(id);
                 <h2>{user.username}</h2>
                 <img src={img.url} alt="No se encontro la imagen" className="imgLastUser" />
                 <h3>{user.name}</h3>
-                <h3>{user.apellido}</h3>
+                <h3>{user.lastName}</h3>
                 <h3>{user.email}</h3>
             </section>
             </article>

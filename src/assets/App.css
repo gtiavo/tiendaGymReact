@@ -337,12 +337,55 @@ li{
 
 }
 
+.fondoError {
+    background-image: url('https://i.pinimg.com/originals/f4/95/9e/f4959eb4f559ad409d281396f5e70c93.jpg') ;
+   
+}
+.errorClass{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.tituloError{
+    width: 200px;
+    color: rgb(23, 23, 26);
+    font-size: 40px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    text-transform:uppercase;
+}
+
+.descripError{
+    width: 200px;
+    margin-left: 1100px;
+margin-top: 20px;
+font-size: 30px;
+font-weight: bold;
+color: rgb(247, 12, 188);
+text-transform:uppercase;
+}
+
+.volerError{
+    width: 200px;
+    background-color: rgba(0, 0, 255, 0.534);
+    color: white;
+    font-size: 40px;
+    margin-left: 1100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-transform:uppercase;
+}
+
+.msg-errors{
+    color:red
+}
 
 /*<-- CSS PARA REACT -->*/
 a{
     text-decoration: none;
     color: black;
 }
+
 .panelConteinerUsers{
     width: 500px;
    margin: auto;
@@ -411,7 +454,7 @@ a{
 .conteinerTotalessCate{
     
     width: 300px;
-    
+   
 }
 
 .TituloCategory{
@@ -458,6 +501,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    
     
 }
 
@@ -512,11 +556,84 @@ border: 1px solid black;
 
 .cardProductDetail{
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
+}
+
+.cardProductDetail h4{
+    margin: 20px;
+    text-align: justify;
 }
 
 .cardUserDetail{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 825px){
+
+
+.conteinerPanelTotal{
+    display: block;
+    text-align: center;
+}
+
+.conteinerLastCate{
+    display: block;
+    
+}
+.conteinerTotalessCate{
+    margin: auto;
+}
+
+}
+
+
+@media (max-width: 620px){
+    
+    
+    .conteinerPanelTotal{
+        display: block;
+        text-align: center;
+    }
+    
+    .conteinerLastCate{
+        display: block;
+        
+    }
+    .conteinerTotalessCate{
+        margin: auto;
+    }
+
+    .cardLastProduct{
+        width: 90%;
+    }
+    .imgLastProduct{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 540px){
+    .conteinerTotaless{
+        width: 90%;
+    }
+    .panelConteinerUsers{
+        width: 100%;
+    }
+    .panelConteinerProducts{
+        width: 100%;
+    }
+    .panelConteinerCategory{
+        width: 100%;
+    }
+    .cardLastUser{
+        width: 90%;
+    }
+    .imgLastUser{
+        width: 90%;
+    }
 }

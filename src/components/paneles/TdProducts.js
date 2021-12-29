@@ -6,9 +6,9 @@ function TdProducts({ id, name, description }) {
       <tbody>
         <tr>
           <td>{id}</td>
-          <Link to={`/products/${id}`}>
-            <td>{name}</td>
-          </Link>
+          
+            <td><Link to={`/products/${id}`}>{name}</Link></td>
+          
           <td>{description}</td>
         </tr>
       </tbody>

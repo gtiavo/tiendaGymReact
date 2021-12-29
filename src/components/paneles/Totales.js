@@ -12,14 +12,16 @@ function Users() {
       .then((data) => setUsers(data.count));
   }, []);
 
-  useEffect(() => {
-    fetch("/api/products")
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
+  async function fetchData(){
+    const data = await (await fetch(`/api/products`)).json()
+    setProducts(data);
+    setCategories(data.countByCategory.length);
+  }
 
-    fetch("/api/products")
-      .then((response) => response.json())
-      .then((data) => setCategories(data.countByCategory.length));
+  useEffect(() => {
+
+    fetchData();
+
   }, []);
 
   useEffect(() => {

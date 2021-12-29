@@ -5,13 +5,15 @@ const ProductDetail = () => {
   const [product, setProduct] = useState([]);
   const [img, setImg] = useState([]);
 
-  useEffect(() => {
-    fetch(`/api/products/${id}`)
-      .then((response) => response.json())
-      .then((data) => setProduct(data.data));
-    fetch(`/api/products/${id}`)
-      .then((response) => response.json())
-      .then((data) => setImg(data.image));
+  async function fetchData(){
+    const data = await (await fetch(`/api/products/${id}`)).json()
+    setProduct(data.data)
+    setImg(data.image)
+  }
+  useEffect( () => {
+
+    fetchData()
+
   }, []);
 
   const { id } = useParams();
@@ -25,8 +27,8 @@ const ProductDetail = () => {
             src={img.url}
             alt="No se encotro la imagen"
           />
-          <h3>{product.name}</h3>
-          <h3>{product.description}</h3>
+          <h2>{product.name}</h2>
+          <h4>{product.description}</h4>
         </article>
       </section>
     </>
