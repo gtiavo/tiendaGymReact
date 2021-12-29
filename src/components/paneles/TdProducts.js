@@ -1,26 +1,19 @@
-import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
 
-function TdProducts( props ) {
-const [ categories, setCategories ]= useState([])
-
-useEffect(() => {
-    fetch('/api/products')
-    .then(response => response.json())
-    .then(data => setCategories(data.countByCategory))
-    
-}, [])
-    return ( 
-        <>
-        <tbody>
-             <tr>
-                  <td>{props.id}</td>
-                  <td>{props.name}</td>
-                  <td >{props.description}</td>
-                
-              </tr>
-              </tbody>
-        </>
-     );
+function TdProducts({ id, name, description }) {
+  return (
+    <>
+      <tbody>
+        <tr>
+          <td>{id}</td>
+          <Link to={`/products/${id}`}>
+            <td>{name}</td>
+          </Link>
+          <td>{description}</td>
+        </tr>
+      </tbody>
+    </>
+  );
 }
 
 export default TdProducts;

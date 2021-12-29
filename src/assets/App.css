@@ -111,9 +111,6 @@
     width: 50px;
     border-radius: 50%;
    
-   
-    
-   
   }
 
   .barraProfile{
@@ -342,6 +339,10 @@ li{
 
 
 /*<-- CSS PARA REACT -->*/
+a{
+    text-decoration: none;
+    color: black;
+}
 .panelConteinerUsers{
     width: 500px;
    margin: auto;
@@ -490,8 +491,32 @@ border: 1px solid black;
     padding: 10px;
     border: 1px solid black;
     }
+   
 .conteinerTableProducts{
   margin-left: 20px;
   margin-top: 50px;
     
+}
+
+.allUsers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.cardUsers{
+    margin: 10px;
+}
+
+
+.cardProductDetail{
+    margin: auto;
+    
+}
+
+.cardUserDetail{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
