@@ -460,7 +460,10 @@ a{
 .TituloCategory{
     margin-left: 20px;
     font-size: 20px;
+    height: 50px;
+    display: inline;
     font-weight: bold;
+    
 }
 
 .containerCategory{
@@ -469,6 +472,7 @@ a{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-left: 20px;
+    
     
 }
 .totalCate{
@@ -579,6 +583,7 @@ border: 1px solid black;
 .conteinerPanelTotal{
     display: block;
     text-align: center;
+    border: 1px solid red;
 }
 
 .conteinerLastCate{
@@ -587,6 +592,15 @@ border: 1px solid black;
 }
 .conteinerTotalessCate{
     margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    border: 1px solid red;
+}
+.containerCategory{
+    width: 50%;
+    margin: 10px;
+    
 }
 
 }
