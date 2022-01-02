@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { fetchData } from "../../helpers/fetchData";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState([]);
   const [img, setImg] = useState([]);
-
-  async function fetchData(){
-    const data = await (await fetch(`/api/products/${id}`)).json()
-    setProduct(data.data)
-    setImg(data.image)
-  }
-  useEffect( () => {
-
-    fetchData()
-
-  }, []);
-
   const { id } = useParams();
+
+  useEffect(() => {
+    fetchData(`/api/products/${id}`).then((data) => setProduct(data.data));
+    fetchData(`/api/products/${id}`).then((data) => setImg(data.image));
+  }, [id]);
 
   return (
     <>

@@ -88,7 +88,7 @@
     padding: 10px 0;
 }
 
-.botonMenuMobile{
+.botonMenuMobile i{
     font-size: 22px;
     background-color: #1F7A8C;
     color: #022B3A;
@@ -141,10 +141,12 @@
 
 footer{
     background-color: #e1e5f2;
+    width: 100%;
     height: 180px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; 
+    margin: auto;
     justify-content: space-around;
    
 }
@@ -532,6 +534,7 @@ a{
 }
 .tableProducts th{
 border: 1px solid black;
+
 }
 
 .tableProducts td{
@@ -583,7 +586,7 @@ border: 1px solid black;
 .conteinerPanelTotal{
     display: block;
     text-align: center;
-    border: 1px solid red;
+  
 }
 
 .conteinerLastCate{
@@ -595,7 +598,7 @@ border: 1px solid black;
     display: flex;
     flex-wrap: nowrap;
     width: 90%;
-    border: 1px solid red;
+   
 }
 .containerCategory{
     width: 50%;
@@ -605,6 +608,46 @@ border: 1px solid black;
 
 }
 
+
+
+
+
+.menuLateral{
+    
+    width: 300px;
+    height: 100%;
+    background-color: #022B3A;
+    position:absolute;
+    z-index: 10;
+    left: -300px;
+}
+
+
+
+.optionsMenu li{
+    color: wheat;
+    margin: 5px;
+    padding: 20px;
+    float:inline-start;
+    list-style: none;
+    border-bottom: 1px solid white;
+    }
+
+    .optionsMenu a{
+        text-decoration: none;
+    }  
+
+
+
+    @media (min-width: 769px){
+        .menuLateral{
+            display: none;
+        }
+    }
+
+
+
+    
 
 @media (max-width: 620px){
     
@@ -634,6 +677,7 @@ border: 1px solid black;
 @media (max-width: 540px){
     .conteinerTotaless{
         width: 90%;
+       
     }
     .panelConteinerUsers{
         width: 100%;
@@ -650,4 +694,13 @@ border: 1px solid black;
     .imgLastUser{
         width: 90%;
     }
+    
+}
+
+
+@media (max-width: 404px){
+    .tableProducts{
+       font-size: 10px;
+    }
+
 }

@@ -1,7 +1,26 @@
+import React, { useRef } from 'react'
 import Logo from '../../assets/img/tgym_logos-03.png'
 import { Link } from 'react-router-dom'
 
+
 function Header() {
+
+  const menu = useRef()
+  let contador = 1
+  
+  const btn = ()=>{
+    if(contador === 1){
+      menu.current.style.left = '0px';
+      menu.current.style.transition = '0.5s';
+      contador = 0;
+        } 
+        else{
+         contador = 1;
+         menu.current.style.left = '-300px';
+         menu.current.style.transition = '0.5s';
+        }
+  }
+
   return (
     <>
       <header className="mainHeader">
@@ -49,11 +68,26 @@ function Header() {
         </nav>
         {/* <!--Dejo botón para versión mobile: --> */}
         <div className="mainHeaderMobile">
-          <Link to="#" className="botonMenuMobile">
+          <Link to="#" onClick={btn} className="botonMenuMobile">
             <i className="fas fa-dumbbell"></i>
           </Link>
         </div>
       </header>
+      <section ref={menu} className="menuLateral">
+    <article className="optionsMenu">
+      <ul>
+      <Link to="/products">
+              <li>Productos</li>
+            </Link>
+            <Link to="/users">
+              <li>Usuarios</li>
+            </Link>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+      </ul>
+    </article>
+</section>
 
       {/*  <!--Aca está el header de web estandarizado, a importar en las páginas que lo necesiten--> */}
     </>
