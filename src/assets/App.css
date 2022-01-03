@@ -494,11 +494,13 @@ a{
 .conteinerLastUser{
     
     margin-left: 100px; 
+    margin: auto;
 }
 
 .cardLastUser{
     width: 300px;
     text-align: center;
+    margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.432);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     
@@ -507,6 +509,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-right: 10px;
     
     
 }
@@ -606,6 +609,9 @@ border: 1px solid black;
     
 }
 
+.conteinerLastProduct{
+    margin: auto;
+}
 }
 
 
@@ -643,6 +649,7 @@ border: 1px solid black;
         .menuLateral{
             display: none;
         }
+        
     }
 
 
@@ -664,6 +671,7 @@ border: 1px solid black;
     .conteinerTotalessCate{
         margin: auto;
     }
+   
 
     .cardLastProduct{
         width: 90%;
@@ -702,5 +710,6 @@ border: 1px solid black;
     .tableProducts{
        font-size: 10px;
     }
+   
 
 }

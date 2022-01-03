@@ -12,6 +12,7 @@ function LastProduct() {
   return (
     <>
       <section className="conteinerLastProduct">
+        <p>ULTIMO PRODUCTO AGRGADO</p>
         <article className="cardLastProduct cardProductDetail" >
           <img
             className="imgLastProduct"

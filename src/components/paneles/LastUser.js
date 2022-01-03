@@ -17,6 +17,7 @@ function LastUser() {
   return (
     <>
       <article className="conteinerLastUser">
+        <p>ULTIMO USUARIO AGERGADO</p>
         <section className="cardLastUser">
         <Link to={`/users/${lastUser.id}`}><h2>{lastUser.username}</h2></Link>
           <Link to={`/users/${lastUser.id}`}><img
